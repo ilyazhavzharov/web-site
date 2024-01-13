@@ -163,10 +163,21 @@
     font-family: Inter,sans-serif;
     font-style: normal;
     font-weight: 600;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -.5px;
+    color: #0d1019;
+    margin-bottom: 16px;
+}
+
+.analytics__title-data {
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
     font-size: 25px;
     line-height: 28px;
     letter-spacing: -.5px;
-    color: var(--BLACK);
+    color: #0d1019;
     margin-bottom: 16px;
 }
 
