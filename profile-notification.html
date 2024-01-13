@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомления</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__content-left">
+                    <div class="header__logo">
+                        <img src="images/logo.png" alt="logotype" class="logo">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link active">Главная</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Кассы</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Аналитика</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Транзакции</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Выплаты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content-right">
+                    <div class="header__balance">
+                        <img src="images/header-balance.png" alt="balance" class="balance-img">
+                        <p class="header-balance-text">0.00 ₽</p>
+                    </div>
+                    <div class="line"></div>
+                    <a href="#"><img src="images/user-icon.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <p class="profile-title">Настройки</p>
+                <div class="settings__wrapper">
+                    <div class="profile__page">
+                        <a href="#" class="profile-text">Профиль</a>
+                    </div>
+                    <div class="notification__page">
+                        <a href="#" class="notification-text">Уведомления</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-notification">
+        <div class="container">
+            <div class="notification__wrapper">
+                <div class="notification__content">
+                    <img src="images/telegram-notification.png" alt="telegram" class="notification-img">
+                    <div class="notification__text">
+                        <p class="notification__title">Получай уведомления в Telegram</p>
+                        <p class="notification__description">Подключи Telegram-бота, чтобы получать уведомления</p>
+                    </div>
+                </div>
+                <button class="notification-button">Подключить</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

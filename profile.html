@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__content-left">
+                    <div class="header__logo">
+                        <img src="images/logo.png" alt="logotype" class="logo">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link active">Главная</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Кассы</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Аналитика</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Транзакции</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Выплаты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content-right">
+                    <div class="header__balance">
+                        <img src="images/header-balance.png" alt="balance" class="balance-img">
+                        <p class="header-balance-text">0.00 ₽</p>
+                    </div>
+                    <div class="line"></div>
+                    <a href="#"><img src="images/user-icon.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <p class="profile-title">Настройки</p>
+                <div class="settings__wrapper">
+                    <div class="profile__page">
+                        <a href="#" class="profile-text">Профиль</a>
+                    </div>
+                    <div class="notification__page">
+                        <a href="#" class="notification-text">Уведомления</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="security">
+        <div class="container">
+            <h2 class="security-title">Безопасность</h2>
+            <div class="autentification">
+                <div class="autentification-left">
+                    <img src="images/scan.svg" alt="autentification" class="autentification-img">
+                    <p class="autentification-title">Двухфакторная аутентификация</p>
+                </div>
+                <div class="autentification-center">
+                    <p class="autentification-text">Активирует подтверждение действий через ввод кода из
+                        приложения-аутентификатора</p>
+                </div>
+                <div class="autentification-right">
+                    <button class="autentification-button">
+                        Включить
+                    </button>
+                </div>
+            </div>
+            <div class="security__cards">
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">Телефон</p>
+                        <img src="images/phone.png" alt="phone" class="security__img">
+                    </div>
+                    <div class="security__card-content">
+                        <p class="security__card-text">
+                            Подключите телефон к аккаунту для повышения уровня безопасности
+                        </p>
+                    </div>
+                    <div class="security__card-bottom">
+                        <button class="security__card-button-connect">Привязать</button>
+                    </div>
+                </div>
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">Email</p>
+                        <img src="images/email.png" alt="email" class="security__img-email">
+                    </div>
+                    <div class="security__card-content">
+                        <p class="security__card-text">
+                            javzharovillya@zski.com.ua
+                        </p>
+                    </div>
+                    <div class="security__card-bottom-second">
+                        <img src="images/card icon.svg" alt="icon" class="security__card-icon">
+                        <p class="security__card-bottom-text">Для изменения необходима<br>
+                            <span>двухфакторная аутентификация</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">Пароль</p>
+                        <img src="images/password.png" alt="password" class="security__img">
+                    </div>
+                    <div class="security__card-bottom">
+                        <button class="security__card-button-transition">Изменить</button>
+                    </div>
+                </div>
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">IP безопасность</p>
+                        <img src="images/ip.png" alt="ip" class="security__img">
+                    </div>
+                    <div class="security__card-content">
+                        <p class="security__card-text">
+                            Разрешенные IP-адреса для API
+                        </p>
+                    </div>
+                    <div class="security__card-bottom-second">
+                        <img src="images/card icon.svg" alt="icon" class="security__card-icon">
+                        <p class="security__card-bottom-text">Для изменения необходима<br>
+                            <span>двухфакторная аутентификация</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="integration">
+        <div class="container">
+            <h2 class="security-title">Интеграция</h2>
+            <div class="security__cards">
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">API ключ</p>
+                        <img src="images/api.png" alt="API" class="security__img">
+                    </div>
+                    <div class="security__card-bottom-second">
+                        <img src="images/card icon.svg" alt="icon" class="security__card-icon">
+                        <p class="security__card-bottom-text">Для изменения необходима<br>
+                            <span>двухфакторная аутентификация</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">ID пользователя</p>
+                        <img src="images/phone.png" alt="phone" class="security__img">
+                    </div>
+                    <div class="security__card-content">
+                        <p class="security__card-text">
+                            e62753b7-3295-4c23-9d84-<br>cb0dbcd45c40
+                        </p>
+                    </div>
+                    <div class="security__card-bottom">
+                        <button class="security__card-button-copy">Скопировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="security-title">Контактные данные</h2>
+            <div class="security__cards">
+                <div class="security__card">
+                    <div class="security__card-header">
+                        <p class="security__card-title">Telegram</p>
+                        <img src="images/telegram.png" alt="phone" class="security__img-telegram">
+                    </div>
+                    <div class="security__card-content">
+                        <p class="security__card-text">
+                            Подключите телефон к аккаунту для повышения уровня безопасности
+                        </p>
+                    </div>
+                    <div class="security__card-bottom">
+                        <button class="security__card-button-connect">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
