@@ -9,6 +9,11 @@ svg {
     background-color: #0D1019;
 }
 
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -814,6 +819,17 @@ svg {
     font-weight: 400;
     font-size: 15px;
     color: #0d1019;
+}
+
+.payments__header-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #0d1019;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
 }
 
 .box-image {
