@@ -271,7 +271,7 @@
     padding: 30px;
     height: 214px;
     border-radius: 20px;
-    border: 1px solid #E3E3E4;
+    border: 1px dashed rgba(13,16,25,.12);
     text-align: center;
     display: flex;
     justify-content: center;
