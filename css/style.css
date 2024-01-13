@@ -1,3 +1,7 @@
+svg {
+    cursor: pointer;
+}
+
 .header {
     width: 100%;
     height: auto;
@@ -703,7 +707,7 @@
 /* CASH REGISTER PAGE */
 
 .search__block {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
     height: 55px;
     border: 1px solid #0d10191e;
@@ -775,6 +779,43 @@
     position: relative;
 }
 
+.transactions__list-header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payments-title {
+    text-align-last: left;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #0d1019;
+}
+
+.payments__content-right {
+    display: flex;
+    align-items: center;
+}
+
+.payments__banks {
+    width: 140px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.payments-button {
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgba(13,16,25,.12);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    color: #0d1019;
+}
+
 .box-image {
     margin-top: 60px;
     width: 170px;
@@ -798,6 +839,29 @@
     margin-top: 15px;
 }
 
+.filter__current {
+    margin-top: 25px;
+    margin-bottom: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-value-title {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #0d10198e;
+    margin-bottom: 5px;
+}
+
+.current-value-element {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #0d1019;
+}
+
 .filter {
     margin-top: 30px;
     margin-left: 60px;
@@ -811,6 +875,7 @@
     height: 670px;
     background-color: #0d10191e;
     left: -30px;
+    top: 110px;
 }
 
 .filter__title {
@@ -846,10 +911,6 @@
     font-weight: 400;
     font-size: 15px;
     color: #0d1019;
-}
-
-.filter__choose-right {
-    cursor: pointer;
 }
 
 .filter__min-max {
