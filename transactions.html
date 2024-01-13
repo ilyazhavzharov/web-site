@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транзакции</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__content-left">
+                    <div class="header__logo">
+                        <img src="images/logo.png" alt="logotype" class="logo">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link active">Главная</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Кассы</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Аналитика</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Транзакции</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Выплаты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content-right">
+                    <div class="header__balance">
+                        <img src="images/header-balance.png" alt="balance" class="balance-img">
+                        <p class="header-balance-text">0.00 ₽</p>
+                    </div>
+                    <div class="line"></div>
+                    <a href="#"><img src="images/user-icon.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <p class="cash-title">Транзакции</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="transactions">
+        <div class="container">
+            <div class="transactions__wrapper">
+                <div class="transactions__list">
+                    <div class="search__block">
+                        <img src="images/search-icon.svg" alt="search-image" class="search__image">
+                        <input class="search__input" type="text" placeholder="Найти кассу по ID, названию, домену">
+                    </div>
+                    <img src="images/box.png" alt="box" class="box-image">
+                    <p class="transactions__title">Транзакции не найдены</p>
+                    <p class="transactions__description">Попробуйте изменить поисковый запрос<br> или очистить фильтры
+                    </p>
+                </div>
+                <div class="filter">
+                    <p class="filter__title">Фильтры</p>
+                    <div class="filter__choose">
+                        <div class="filter__choose-left">
+                            <p class="filter__choose-title">Статус</p>
+                            <p class="filter__choose-element">Все статусы</p>
+                        </div>
+                        <div class="filter__choose-right">
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.7569 0.358311C18.879 0.244712 19.0238 0.154601 19.1832 0.0931222C19.3426 0.031643 19.5135 1.19696e-09 19.686 0C19.8586 -1.19696e-09 20.0295 0.031643 20.1889 0.0931222C20.3483 0.154601 20.4931 0.244712 20.6152 0.358311C20.7372 0.47191 20.8339 0.606771 20.9 0.755195C20.966 0.903619 21 1.0627 21 1.22335C21 1.384 20.966 1.54308 20.9 1.69151C20.8339 1.83993 20.7372 1.97479 20.6152 2.08839L11.4291 10.641C11.3072 10.7548 11.1624 10.8451 11.003 10.9067C10.8435 10.9683 10.6726 11 10.5 11C10.3274 11 10.1565 10.9683 9.99704 10.9067C9.83761 10.8451 9.6928 10.7548 9.5709 10.641L0.384846 2.08839C0.262835 1.97479 0.166048 1.83993 0.100016 1.69151C0.0339851 1.54308 0 1.384 0 1.22335C0 1.0627 0.0339851 0.903619 0.100016 0.755195C0.166048 0.606771 0.262835 0.47191 0.384846 0.358311C0.506857 0.244712 0.651705 0.154601 0.811121 0.0931222C0.970537 0.031643 1.1414 0 1.31395 0C1.4865 0 1.65736 0.031643 1.81678 0.0931222C1.97619 0.154601 2.12104 0.244712 2.24305 0.358311L10.5 8.04837L18.7569 0.358311Z"
+                                    fill="#0D1019" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="filter__choose">
+                        <div class="filter__choose-left">
+                            <p class="filter__choose-title">Период</p>
+                            <p class="filter__choose-element">Все время</p>
+                        </div>
+                        <div class="filter__choose-right">
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.7569 0.358311C18.879 0.244712 19.0238 0.154601 19.1832 0.0931222C19.3426 0.031643 19.5135 1.19696e-09 19.686 0C19.8586 -1.19696e-09 20.0295 0.031643 20.1889 0.0931222C20.3483 0.154601 20.4931 0.244712 20.6152 0.358311C20.7372 0.47191 20.8339 0.606771 20.9 0.755195C20.966 0.903619 21 1.0627 21 1.22335C21 1.384 20.966 1.54308 20.9 1.69151C20.8339 1.83993 20.7372 1.97479 20.6152 2.08839L11.4291 10.641C11.3072 10.7548 11.1624 10.8451 11.003 10.9067C10.8435 10.9683 10.6726 11 10.5 11C10.3274 11 10.1565 10.9683 9.99704 10.9067C9.83761 10.8451 9.6928 10.7548 9.5709 10.641L0.384846 2.08839C0.262835 1.97479 0.166048 1.83993 0.100016 1.69151C0.0339851 1.54308 0 1.384 0 1.22335C0 1.0627 0.0339851 0.903619 0.100016 0.755195C0.166048 0.606771 0.262835 0.47191 0.384846 0.358311C0.506857 0.244712 0.651705 0.154601 0.811121 0.0931222C0.970537 0.031643 1.1414 0 1.31395 0C1.4865 0 1.65736 0.031643 1.81678 0.0931222C1.97619 0.154601 2.12104 0.244712 2.24305 0.358311L10.5 8.04837L18.7569 0.358311Z"
+                                    fill="#0D1019" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="filter__min-max">
+                        <div class="filter-min">
+                            <p class="filter__choose-title">Мин. сумма</p>
+                            <p class="filter__choose-element">0 ₽</p>
+                        </div>
+                        <div class="devive__line"></div>
+                        <div class="filter-min">
+                            <p class="filter__choose-title">Макс. сумма</p>
+                            <p class="filter__choose-element">1 000 000 ₽</p>
+                        </div>
+                    </div>
+                    <div class="filter__slide">
+                        <div class="filter__slide-elips"></div>
+                        <div class="filter__slide-elips"></div>
+                    </div>
+                    <div class="filter__choose">
+                        <div class="filter__choose-left">
+                            <p class="filter__choose-title">Касса</p>
+                            <p class="filter__choose-element">Все кассы</p>
+                        </div>
+                        <div class="filter__choose-right">
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.7569 0.358311C18.879 0.244712 19.0238 0.154601 19.1832 0.0931222C19.3426 0.031643 19.5135 1.19696e-09 19.686 0C19.8586 -1.19696e-09 20.0295 0.031643 20.1889 0.0931222C20.3483 0.154601 20.4931 0.244712 20.6152 0.358311C20.7372 0.47191 20.8339 0.606771 20.9 0.755195C20.966 0.903619 21 1.0627 21 1.22335C21 1.384 20.966 1.54308 20.9 1.69151C20.8339 1.83993 20.7372 1.97479 20.6152 2.08839L11.4291 10.641C11.3072 10.7548 11.1624 10.8451 11.003 10.9067C10.8435 10.9683 10.6726 11 10.5 11C10.3274 11 10.1565 10.9683 9.99704 10.9067C9.83761 10.8451 9.6928 10.7548 9.5709 10.641L0.384846 2.08839C0.262835 1.97479 0.166048 1.83993 0.100016 1.69151C0.0339851 1.54308 0 1.384 0 1.22335C0 1.0627 0.0339851 0.903619 0.100016 0.755195C0.166048 0.606771 0.262835 0.47191 0.384846 0.358311C0.506857 0.244712 0.651705 0.154601 0.811121 0.0931222C0.970537 0.031643 1.1414 0 1.31395 0C1.4865 0 1.65736 0.031643 1.81678 0.0931222C1.97619 0.154601 2.12104 0.244712 2.24305 0.358311L10.5 8.04837L18.7569 0.358311Z"
+                                    fill="#0D1019" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="filter__choose">
+                        <div class="filter__choose-left">
+                            <p class="filter__choose-title">Способ оплаты</p>
+                            <p class="filter__choose-element">Все способы</p>
+                        </div>
+                        <div class="filter__choose-right">
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.7569 0.358311C18.879 0.244712 19.0238 0.154601 19.1832 0.0931222C19.3426 0.031643 19.5135 1.19696e-09 19.686 0C19.8586 -1.19696e-09 20.0295 0.031643 20.1889 0.0931222C20.3483 0.154601 20.4931 0.244712 20.6152 0.358311C20.7372 0.47191 20.8339 0.606771 20.9 0.755195C20.966 0.903619 21 1.0627 21 1.22335C21 1.384 20.966 1.54308 20.9 1.69151C20.8339 1.83993 20.7372 1.97479 20.6152 2.08839L11.4291 10.641C11.3072 10.7548 11.1624 10.8451 11.003 10.9067C10.8435 10.9683 10.6726 11 10.5 11C10.3274 11 10.1565 10.9683 9.99704 10.9067C9.83761 10.8451 9.6928 10.7548 9.5709 10.641L0.384846 2.08839C0.262835 1.97479 0.166048 1.83993 0.100016 1.69151C0.0339851 1.54308 0 1.384 0 1.22335C0 1.0627 0.0339851 0.903619 0.100016 0.755195C0.166048 0.606771 0.262835 0.47191 0.384846 0.358311C0.506857 0.244712 0.651705 0.154601 0.811121 0.0931222C0.970537 0.031643 1.1414 0 1.31395 0C1.4865 0 1.65736 0.031643 1.81678 0.0931222C1.97619 0.154601 2.12104 0.244712 2.24305 0.358311L10.5 8.04837L18.7569 0.358311Z"
+                                    fill="#0D1019" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="filter__button-apply">Применить</button>
+                    <button class="filter__button-export">Экспортировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
