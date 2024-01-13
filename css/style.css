@@ -160,7 +160,7 @@
 }
 
 .analytics__title {
-font-family: Inter,sans-serif;
+    font-family: Inter,sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -168,6 +168,14 @@ font-family: Inter,sans-serif;
     letter-spacing: -.5px;
     color: var(--BLACK);
     margin-bottom: 16px;
+}
+
+.analytic__title {
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 35px;
 }
 
 .analytics__button {
@@ -199,9 +207,15 @@ font-family: Inter,sans-serif;
     text-align: center;
 }
 
+.analytic__wrapper {
+    margin: 50px;
+    text-align: center;
+}
+
 .analytics__img {
-    margin-bottom: 65px;
-    width: 700px;
+    margin-bottom: 35px;
+    width: 600px;
+    height: 170px;
 }
 
 .analytics__description {
@@ -211,6 +225,7 @@ font-family: Inter,sans-serif;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -.13px;
+    color: #0d10198e;
 }
 
 .casa {
@@ -700,4 +715,34 @@ font-family: Inter,sans-serif;
 
 .casa-page {
     margin-top: 20px;
+}
+
+/* analytics page */
+.second__analytics {
+    margin-top: 100px;
+}
+
+.analytic__button {
+    display: flex;
+    width: 250px;
+    height: 60px;
+    background-color: #f6f6f7;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.how-it-works {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #0d1019;
+}
+
+.analytic__img {
+    width: 43px;
+    height: 35px;
 }
