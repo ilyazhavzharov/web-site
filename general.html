@@ -7,11 +7,125 @@
     <title>Web Site</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-    <h1>HELLO</h1>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__content-left">
+                    <div class="header__logo">
+                        <img src="images/logo.png" alt="logotype" class="logo">
+                    </div>
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link active">Главная</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Кассы</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Аналитика</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Транзакции</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="menu__link">Выплаты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content-right">
+                    <div class="header__balance">
+                        <a href="#">
+                            <img src="images/header-balance.png" alt="balance">
+                            <p class="header-balance-text">0.00 ₽</p>
+                        </a>
+                    </div>
+                    <div class="line"></div>
+                    <a href="#"><img src="images/user-icon.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <p class="balance-title">0.00 ₽</p>
+                <p class="balance-text">Общий баланс</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="analytics">
+        <div class="container">
+            <div class="analytics__header">
+                <h1 class="analytics__title">Аналитика</h1>
+                <button class="analytics__button">Перейти</button>
+            </div>
+            <div class="analytics__wrapper">
+                <img src="images/analytics.png" alt="analytics" class="analytics__img">
+                <p class="analytics__title">Данные отсутствуют</p>
+                <p class="analytics__description">У вас нет активных касс. Дождитесь окончания модерации</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="casa">
+        <div class="container">
+            <div class="casa__header">
+                <h1 class="casa__title">Кассы</h1>
+                <button class="casa__button">Перейти</button>
+            </div>
+            <div class="casa__wrapper">
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__header-left">
+                            <p class="card__title">Web site</p>
+                            <p class="card__description">advenced.team</p>
+                        </div>
+                        <div class="card__header-right">
+                            <a href="#">
+                                <img src="images/web site icon.png" alt="web site icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__text">Подтвердите что вы владелец сайта</p>
+                        <div class="card__slider">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-add">
+                    <div class="card-add-content">
+                        <a href="#">
+                            <svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.5 17V41.5876M39 29.2938H18" stroke="#0D1019" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <rect x="0.5" y="0.5" width="57" height="57" rx="14.5" stroke="#0D1019" />
+                            </svg>
+                            <p class="card__text">Подключить кассу</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="container">
+            <div class="social__content">
+                <p class="social__title">Будь в курсе событий, подписывайся на наши соц. сети!</p>
+                <div class="social__icons">
+                    <a href="#">
+                        <img src="images/telegram-social.png" alt="telegram" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/wk-social.png" alt="telegram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/main.js"></script>
 </body>
 
