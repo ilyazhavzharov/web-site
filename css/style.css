@@ -1,13 +1,13 @@
 .header {
     width: 100%;
-    height: 270px;
+    height: auto;
+    padding: 0 0 30px;
     background-color:#0D1019;
 }
 
 .container {
-    max-width: 1710px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .header__content {
@@ -31,7 +31,7 @@
 }
 
 .menu__list li{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .menu__list li:last-child {
@@ -40,9 +40,15 @@
 
 .menu__link {
     color: #95969A;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+}
+
+.line {
+    width: 2px;
+    height: 50px;
+    background: #292C34;
 }
 
 .menu__link:hover {
@@ -51,7 +57,7 @@
 
 .active{
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Inter', sans-serif;
     position: relative;
 }
@@ -71,14 +77,15 @@
     align-items: center;
 }
 
-.header__balance a{
+.header__balance{
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    border: 2px solid rgba(255,255,255,.1176470588);;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    width: 130px;
-    height: 55px;
     justify-content: center;
-    border-radius: 27px;
-    border: 2px solid #474950;
     margin-right: 30px;
 }
 
@@ -89,10 +96,15 @@
     margin-right: 30px;
 }
 
+.balance-img {
+    width: 15px;
+    height: 15px;
+}
+
 .header-balance-text {
-    color: #95969A;
+    color: white;
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin-left: 10px;
 }
@@ -102,18 +114,24 @@
 }
 
 .balance-title {
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
-    color: #fff;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -.79px;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .balance-text {
-    color: #95969A;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.22px;
+    color: white;
 }
 
 .analytics {
@@ -127,21 +145,33 @@
 }
 
 .analytics__title {
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-size: 45px;
+font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 600;
+    font-size: 25px;
+    line-height: 28px;
+    letter-spacing: -.5px;
+    color: var(--BLACK);
+    margin-bottom: 16px;
 }
 
 .analytics__button {
-    width: 155px;
-    height: 85px;
-    border: 1px solid #E3E3E4;
-    border-radius: 10px;
-    color: #0D1019;
-    font-family: Gilroy;
-    font-size: 20px;
+    display: block;
+    height: 100%;
+    padding: 20px 24px;
+    color: black;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -.13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 8px;
+    border: 1px solid rgba(13,16,25,.1176470588);
 }
 
 .analytics__button:hover {
@@ -156,14 +186,16 @@
 
 .analytics__img {
     margin-bottom: 65px;
+    width: 700px;
 }
 
 .analytics__description {
-    margin-top: 25px;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.70);
-    font-family: 'Inter', sans-serif;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -.13px;
 }
 
 .casa {
@@ -178,21 +210,31 @@
 }
 
 .casa__title {
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-size: 45px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -.64px;
 }
 
 .casa__button {
-    width: 155px;
-    height: 85px;
-    border: 1px solid #E3E3E4;
-    border-radius: 10px;
-    color: #0D1019;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    display: block;
+    height: 100%;
+    padding: 20px 24px;
+    color: black;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -.13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 8px;
+    border: 1px solid rgba(13,16,25,.1176470588);
 }
 
 .casa__button:hover {
@@ -202,23 +244,14 @@
 }
 
 .casa__wrapper {
-    margin-top: 45px;
+    margin-top: 24px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
+    grid-template-columns: repeat(auto-fill,minmax(312px,1fr));
+    gap: 24px;
+    list-style: none;
 }
 
-.card {
-    padding: 30px;
-    height: 214px;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+.card {padding: 25px;height: 165px;border-radius: 20px;background: #fff;box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);display: flex;justify-content: space-between;flex-direction: column;}
 
 .card__header {
     display: flex;
@@ -227,25 +260,35 @@
 }
 
 .card__title {
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-size: 26px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.33px;
 }
 
 .card__description {
-    color: rgba(0, 0, 0, 0.70);
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 10px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -.13px;
+    color: gray;
 }
 
 .card__text {
-    color: #0D1019;
-    font-family: 'Inter', sans-serif;
-    font-size: 19px;
+    font-family: Inter,sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -.13px;
 }
 
 .card__slider {
@@ -254,7 +297,7 @@
 }
 
 .slide {
-    margin-top: 20px;
+    margin-top: 8px;
     width: 147.638px;
     height: 3px;
     border-radius: 50px;
@@ -268,8 +311,8 @@
 }
 
 .card-add {
-    padding: 30px;
-    height: 214px;
+    padding: 25px;
+    height: 165px;
     border-radius: 20px;
     border: 1px dashed rgba(13,16,25,.12);
     text-align: center;
@@ -288,24 +331,27 @@
 
 .social__content {
     margin-top: 50px;
-    max-width: 100%;
-    height: 122px;
+    /* max-width: 100%; */
+    /* height: 122px; */
     border-radius: 20px;
-    border: 1px solid #D6D6D6;
+    border: 1px solid rgba(13,16,25,.06);
     margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 55px;
+    padding: 20px 30px;
 }
 
 .social__title {
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: 600;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.33px;
 }
 
 .social-icon {
     margin-left: 20px;
+    width: 36px;
 }
